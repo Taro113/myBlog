@@ -19,6 +19,7 @@ git checkout origin/main -- docs/.vitepress/dist
 
 REM 用 robocopy 将文件同步到项目根目录
 robocopy .\docs\.vitepress\dist\ .\ /E
+rmdir /s /q ".\docs\.vitepress\dist"
 
 REM 提交并推送到 dist 分支
 git add .
