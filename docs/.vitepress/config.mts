@@ -88,6 +88,7 @@ const teekConfig = defineTeekConfig({
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/myBlog/",
   extends: teekConfig,
   title: "郜健宇的个人博客",
   description: "郜健宇的个人博客-描述",
