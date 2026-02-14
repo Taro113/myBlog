@@ -4,11 +4,11 @@ layout: home
 
 hero:
   name: "郜健宇的个人博客"
-  text: "郜健宇的个人博客-描述"
-  tagline: My great project tagline
+  text: ""
+  tagline: 想要就争取，不行就努力
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 个人介绍
       link: /markdown-examples
     - theme: alt
       text: API Examples
@@ -23,3 +23,6 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+## index.md
+
+嘎嘎嘎

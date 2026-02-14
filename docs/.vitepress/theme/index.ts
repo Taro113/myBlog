@@ -4,4 +4,5 @@ import "vitepress-theme-teek/index.css";
 
 export default {
   extends: Teek,
+  // logo: "/teek-logo-mini.svg",
 };
