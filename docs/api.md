@@ -1,5 +1,10 @@
 ---
+date: 2026-02-16 12:39:44
+title: api-examples
 outline: deep
+permalink: /pages/bac92b
+categories:
+  - 
 ---
 
 # Runtime API Examples

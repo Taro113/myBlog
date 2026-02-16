@@ -7,6 +7,21 @@ const teekConfig = defineTeekConfig({
   author: {
     name: "郜健宇",
   },
+  vitePlugins: {
+    autoFrontmatter: true,
+    autoFrontmatterOption: {
+      permalinkType: "rules",
+      permalinkRules: [
+        { folderName: "01.进化志", rule: "/growth/$uuid6" },
+        { folderName: "04.代码宇宙", rule: "/tech/$uuid6" },
+        { folderName: "07.作品集", rule: "/portfolio/$uuid6" },
+        { folderName: "10.灵感抽屉", rule: "/inspiration/$uuid6" },
+        { folderName: "13.热爱清单", rule: "/hobbies/$uuid6" },
+        { folderName: "16.精神食粮", rule: "/library/$uuid6/" },
+        { folderName: "19.心语角落", rule: "/heart/$uuid6" },
+      ],
+    },
+  },
   backTop: {
     enabled: true, // 是否启动回到顶部功能
     content: "icon", // 回到顶部按钮的显示内容，可选配置 progress | icon
@@ -99,18 +114,27 @@ export default defineConfig({
         text: "🚀 进化志",
         items: [
           { text: "Test", link: "/pages/b1ad26" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Runtime API Examples", link: "/api" },
         ],
       },
       {
         text: "⚙️ 代码宇宙",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
+          { text: "唯有爱与生活不可辜负", link: "/tech/7121d4" },
+          {
+            text: "🗄️ 数据库",
+            items: [
+              {
+                text: "DB数据类型一致性风险治理方案",
+                link: "/tech/c05570",
+              },
+            ],
+          },
           {
             text: "⚡ 效率工具箱",
             items: [
-              { text: "Markdown Examples", link: "/markdown-examples" },
-              { text: "Runtime API Examples", link: "/api-examples" },
+              { text: "Markdown Examples", link: "/markdown" },
+              { text: "Runtime API Examples", link: "/api" },
             ],
           },
         ],
@@ -118,36 +142,36 @@ export default defineConfig({
       {
         text: "📦 作品集",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Markdown Examples", link: "/markdown" },
+          { text: "Runtime API Examples", link: "/api" },
         ],
       },
       {
         text: "💡 灵感抽屉",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Markdown Examples", link: "/markdown" },
+          { text: "Runtime API Examples", link: "/api" },
         ],
       },
       {
         text: "🎨 热爱清单",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Markdown Examples", link: "/markdown" },
+          { text: "Runtime API Examples", link: "/api" },
         ],
       },
       {
         text: "📚 精神食粮",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Markdown Examples", link: "/markdown" },
+          { text: "Runtime API Examples", link: "/api" },
         ],
       },
       {
         text: "🌿 心语角落",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Markdown Examples", link: "/markdown" },
+          { text: "Runtime API Examples", link: "/api" },
         ],
       },
     ],
@@ -155,11 +179,11 @@ export default defineConfig({
     // sidebar: [
     //   {
     //     text: "Examples",
-    //     items: [{ text: "Markdown Examples", link: "/markdown-examples" }],
+    //     items: [{ text: "Markdown Examples", link: "/markdown" }],
     //   },
     //   {
     //     text: "Examples2",
-    //     items: [{ text: "Runtime API Examples", link: "/api-examples" }],
+    //     items: [{ text: "Runtime API Examples", link: "/api" }],
     //   },
     // ],
 

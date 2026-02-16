@@ -1,3 +1,10 @@
+---
+date: 2026-02-16 12:39:44
+title: markdown-examples
+permalink: /pages/285017
+categories:
+  - 
+---
 # Markdown Extension Examples
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.
