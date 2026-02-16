@@ -122,11 +122,37 @@ export default defineConfig({
         items: [
           { text: "唯有爱与生活不可辜负", link: "/tech/7121d4" },
           {
+            text: "☕ Java",
+            items: [
+              {
+                text: "LocalDateTime使用",
+                link: "/tech/4df292",
+              },
+            ],
+          },
+          {
+            text: "🔧 框架与库",
+            items: [
+              { text: "MyBatis", link: "/tech/86f7a8" },
+              { text: "MyBatis-Plus", link: "/tech/9660f6" },
+              { text: "SpringCloud", link: "/tech/5b55ae" },
+              { text: "Redis", link: "/tech/e06551" },
+            ],
+          },
+          {
             text: "🗄️ 数据库",
             items: [
               {
                 text: "DB数据类型一致性风险治理方案",
                 link: "/tech/c05570",
+              },
+              {
+                text: "xml文件符号表示",
+                link: "/tech/f8b33c",
+              },
+              {
+                text: "SQL常用语句",
+                link: "/tech/d10041",
               },
             ],
           },
