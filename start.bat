@@ -13,13 +13,14 @@ git push origin main
 
 REM 切换到 dist 分支（如果不存在则创建）
 git checkout dist
+git pull
 
 REM 从 main 分支检出编译后的静态文件
 git checkout origin/main -- docs/.vitepress/dist
 
 REM 用 robocopy 将文件同步到项目根目录
 robocopy .\docs\.vitepress\dist\ .\ /E
-rmdir /s /q ".\docs\.vitepress\dist"
+@REM rmdir /s /q ".\docs\.vitepress\dist"
 
 REM 提交并推送到 dist 分支
 git add .
