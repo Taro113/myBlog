@@ -4,6 +4,14 @@ import { defineTeekConfig } from "vitepress-theme-teek/config";
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
   vpHome: false,
+  wallpaper: {
+    enabled: true,
+    hideBanner: true,
+  },
+  post: {
+    postStyle: "card",
+  },
+  homeCardListPosition: "left",
   author: {
     name: "郜健宇",
   },
@@ -40,22 +48,19 @@ const teekConfig = defineTeekConfig({
     mask: false, // body 背景图遮罩
     maskBg: "rgba(0, 0, 0, 0.2)", // body 背景图遮罩颜色，如果为数字，则是 rgba(0, 0, 0, ${maskBg})，如果为字符串，则作为背景色。mask 为 true 时生效
   },
-  wallpaper: {
-    enabled: true,
-    hideBanner: false,
-  },
   footerInfo: {
     customHtml: '<span id="runtime"></span>',
     topMessage: [
       '<span><img alt="VitePress" src="https://liuyuyang.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fanimals.65eaf6e3.webp&w=750&q=75"><span/>',
+      '<a title="Github release" target="_blank" href="https://github.com/Kele-Bingtang/vitepress-theme-teek/releases" style="margin-right: 10px;">\n        <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Kele-Bingtang/vitepress-theme-teek?logo=github">\n      </a>\n\n      <a title="Npm Version" target="_blank" href="https://www.npmjs.com/package/vitepress-theme-teek" style="margin-right: 10px;">\n        <img src="https://img.shields.io/npm/v/vitepress-theme-teek?logo=npm&color=%09%23bf00ff" alt="https://img.shields.io/npm/v/vitepress-theme-teek?color=%09%23bf00ff">\n      </a>\n\n      <img src="https://img.shields.io/badge/v18.x-x?logo=node.js&label=node" alt="node version" style="margin-right: 10px;">\n      <img src="https://img.shields.io/github/languages/code-size/Kele-Bingtang/vitepress-theme-teek?logo=Visual Studio Code&logoColor=blue" alt="GitHub code size in bytes" style="margin-right: 10px;">\n\n      <a title="GitHub Discussions" target="_blank" href="https://github.com/Kele-Bingtang/vitepress-theme-teek/discussions" style="margin-right: 10px;">\n        <img src="https://img.shields.io/github/discussions/Kele-Bingtang/vitepress-theme-teek?color=9cf&logo=github" alt="GitHub Discussions">\n      </a>\n\n      <a title="MIT License" target="_blank" href="https://github.com/Kele-Bingtang/vitepress-theme-teek/blob/master/LICENSE" style="margin-right: 10px;">\n        <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License">\n      </a>',
     ],
   },
-  // docAnalysis: {
-  //   createTime: "2025-03-23",
-  //   statistics: {
-  //     provider: "busuanzi",
-  //   },
-  // },
+  docAnalysis: {
+    createTime: "2025-03-23",
+    statistics: {
+      provider: "busuanzi",
+    },
+  },
   friendLink: {
     // 友情链接
     list: [
@@ -86,7 +91,7 @@ const teekConfig = defineTeekConfig({
     enabled: true,
     name: "🎉 Self Blog",
     bgStyle: "fullImg",
-    imgWaves: true,
+    imgSrc: ["/bg/logo.png", "/bg/png.png"],
     description: [
       "故事由我书写，旅程由你见证，传奇由她聆听 —— 来自 Young Kbt",
       "积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu",
@@ -107,14 +112,30 @@ export default defineConfig({
   extends: teekConfig,
   title: "郜健宇的个人博客",
   description: "郜健宇的个人博客-描述",
+  markdown: {
+    lineNumbers: true,
+    image: {
+      // 默认禁用；设置为 true 可为所有图片启用懒加载。
+      lazyLoading: true,
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    outline: {
+      // 文章右侧页内目录标题层级显示
+      level: [2, 4],
+    },
+    outlineTitle: "目录导航",
     nav: [
       {
         text: "🚀 进化志",
         items: [
-          { text: "Test", link: "/pages/b1ad26" },
-          { text: "Runtime API Examples", link: "/api" },
+          {
+            text: "美团四大名著",
+            items: [
+              { text: "走进高效能人士的七个习惯", link: "/growth/9703d2" },
+            ],
+          },
         ],
       },
       {
@@ -214,7 +235,7 @@ export default defineConfig({
     // ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/Taro113/myBlog" },
     ],
   },
 });
