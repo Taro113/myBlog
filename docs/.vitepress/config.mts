@@ -41,9 +41,9 @@ const teekConfig = defineTeekConfig({
   },
   sidebarTrigger: true,
   bodyBgImg: {
-    imgSrc: ["/bg/cover1.jpg", "/bg/cover2.jpg", "/bg/cover3.jpg"], // body 背景图片链接。单张图片 string | 多张图片 string[], 多张图片时每隔 imgInterval 秒换一张
+    imgSrc: "/bg/cover3.jpg", // body 背景图片链接。单张图片 string | 多张图片 string[], 多张图片时每隔 imgInterval 秒换一张
     imgOpacity: 0.6, // body 背景图透明度，选值 0.1 ~ 1.0
-    imgInterval: 15000, //  body 当多张背景图时（imgSrc 为数组），设置切换时间，单位：毫秒
+    // imgInterval: 15000, //  body 当多张背景图时（imgSrc 为数组），设置切换时间，单位：毫秒
     imgShuffle: false, // body 背景图是否随机切换，为 false 时按顺序切换
     mask: false, // body 背景图遮罩
     maskBg: "rgba(0, 0, 0, 0.2)", // body 背景图遮罩颜色，如果为数字，则是 rgba(0, 0, 0, ${maskBg})，如果为字符串，则作为背景色。mask 为 true 时生效
@@ -93,9 +93,10 @@ const teekConfig = defineTeekConfig({
     bgStyle: "fullImg",
     imgSrc: ["/bg/logo.png", "/bg/png.png"],
     description: [
-      "故事由我书写，旅程由你见证，传奇由她聆听 —— 来自 Young Kbt",
-      "积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu",
-      "这一生波澜壮阔或是不惊都没问题 —— 来自 Weibw",
+      "想要就争取，不行就努力",
+      "越能看懂历史，越能明白现在，越能看清未来",
+      "是什么，为什么，怎么做，是否有更好的方案，验证结果",
+      "我们必不可停止探索，而一切探索的尽头，都是重回起点，并对起点有初次般的了解",
     ],
     descStyle: "types",
   },
@@ -202,16 +203,13 @@ export default defineConfig({
       },
       {
         text: "🎨 热爱清单",
-        items: [
-          { text: "Markdown Examples", link: "/markdown" },
-          { text: "Runtime API Examples", link: "/api" },
-        ],
+        items: [{ text: "拍照摄影", link: "/hobbies/372bfb" }],
       },
       {
         text: "📚 精神食粮",
         items: [
-          { text: "Markdown Examples", link: "/markdown" },
-          { text: "Runtime API Examples", link: "/api" },
+          { text: "亚马逊逆向工作法", link: "/library/9bc140" },
+          { text: "我的最后一本口才书", link: "/library/8f4ba0" },
         ],
       },
       {
