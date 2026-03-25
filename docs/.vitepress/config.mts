@@ -171,7 +171,6 @@ export default defineConfig({
             text: "⚡ 效率工具箱",
             items: [
               { text: "如何养好一只龙虾🦞", link: "/tech/402261" },
-              { text: "Runtime API Examples", link: "/api" },
             ],
           },
         ],
@@ -186,8 +185,7 @@ export default defineConfig({
       {
         text: "💡 灵感抽屉",
         items: [
-          { text: "Markdown Examples", link: "/markdown" },
-          { text: "Runtime API Examples", link: "/api" },
+          { text: "除非你知道更好的办法", link: "/inspiration/c135c6" },
         ],
       },
       {
@@ -198,19 +196,7 @@ export default defineConfig({
         text: "📚 精神食粮",
         items: [
           { text: "亚马逊逆向工作法", link: "/library/9bc140" },
-          { text: "高效能人士的七个习惯", items: [
-            { text: "开篇", link: "/library/d4bf6f" },
-            { text: "习惯一：主动积极（上）", link: "/library/1bbe08" },
-            { text: "习惯一：主动积极（下）", link: "/library/a4c0e3" },
-            { text: "习惯二：以终为始", link: "/library/e9fdc2" },
-            { text: "习惯三：要事第一", link: "/library/867c96" },
-            { text: "从独立到互赖", link: "/library/6009b6" },
-            { text: "习惯四：双赢思维（上）", link: "/library/8fbc81" },
-            { text: "习惯五：知彼解己", link: "/library/9027e5" },
-            { text: "习惯六：统合综效", link: "/library/16c9ea" },
-            { text: "习惯七：不断更新", link: "/library/7c2995" },
-            { text: "尾声：由内而外开启转变之门", link: "/library/b8c16a" },
-          ] },
+          { text: "高效能人士的七个习惯", link: "/library/d4bf6f" },
           { text: "我的最后一本口才书", link: "/library/8f4ba0" },
         ],
       },
