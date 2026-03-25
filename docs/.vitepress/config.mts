@@ -61,24 +61,24 @@ const teekConfig = defineTeekConfig({
       provider: "busuanzi",
     },
   },
-  friendLink: {
-    // 友情链接
-    list: [
-      {
-        name: "vuepress-theme-vdoing",
-        desc: "🚀一款简洁高效的VuePress 知识管理&博客 主题",
-        avatar: "https://doc.xugaoyi.com/img/logo.png",
-        link: "https://doc.xugaoyi.com/",
-      },
-      {
-        name: "二丫讲梵",
-        desc: "💻学习📝记录🔗分享",
-        avatar: "https://wiki.eryajf.net/img/logo.png",
-        link: " https://wiki.eryajf.net/",
-      },
-    ],
-    autoScroll: true,
-  },
+  // friendLink: {
+  //   // 友情链接
+  //   list: [
+  //     {
+  //       name: "vuepress-theme-vdoing",
+  //       desc: "🚀一款简洁高效的VuePress 知识管理&博客 主题",
+  //       avatar: "https://doc.xugaoyi.com/img/logo.png",
+  //       link: "https://doc.xugaoyi.com/",
+  //     },
+  //     {
+  //       name: "二丫讲梵",
+  //       desc: "💻学习📝记录🔗分享",
+  //       avatar: "https://wiki.eryajf.net/img/logo.png",
+  //       link: " https://wiki.eryajf.net/",
+  //     },
+  //   ],
+  //   autoScroll: true,
+  // },
   // social: [
   //   {
   //     icon: "icon-github",
@@ -94,8 +94,9 @@ const teekConfig = defineTeekConfig({
     imgSrc: ["/bg/logo.png", "/bg/png.png"],
     description: [
       "想要就争取，不行就努力",
-      "越能看懂历史，越能明白现在，越能看清未来",
+      "越能看懂历史，越能明确现在，越能看清未来",
       "是什么，为什么，怎么做，是否有更好的方案，验证结果",
+      "解决一个问题的答案往往并不在问题的同一维度，而是在更高维度上",
       "我们必不可停止探索，而一切探索的尽头，都是重回起点，并对起点有初次般的了解",
     ],
     descStyle: "types",
@@ -131,12 +132,12 @@ export default defineConfig({
       {
         text: "🚀 进化志",
         items: [
-          {
-            text: "美团四大名著",
-            items: [
-              { text: "走进高效能人士的七个习惯", link: "/growth/9703d2" },
-            ],
-          },
+          // {
+          //   text: "美团四大名著",
+          //   items: [
+          //     { text: "走进高效能人士的七个习惯", link: "/growth/9703d2" },
+          //   ],
+          // },
         ],
       },
       {
@@ -146,10 +147,7 @@ export default defineConfig({
           {
             text: "☕ Java",
             items: [
-              {
-                text: "LocalDateTime使用",
-                link: "/tech/4df292",
-              },
+              { text: "LocalDateTime使用", link: "/tech/4df292", },
             ],
           },
           {
@@ -164,24 +162,15 @@ export default defineConfig({
           {
             text: "🗄️ 数据库",
             items: [
-              {
-                text: "DB数据类型一致性风险治理方案",
-                link: "/tech/c05570",
-              },
-              {
-                text: "xml文件符号表示",
-                link: "/tech/f8b33c",
-              },
-              {
-                text: "SQL常用语句",
-                link: "/tech/d10041",
-              },
+              { text: "DB数据类型一致性风险治理方案", link: "/tech/c05570", },
+              { text: "xml文件符号表示", link: "/tech/f8b33c", },
+              { text: "SQL常用语句", link: "/tech/d10041", },
             ],
           },
           {
             text: "⚡ 效率工具箱",
             items: [
-              { text: "Markdown Examples", link: "/markdown" },
+              { text: "如何养好一只龙虾🦞", link: "/tech/402261" },
               { text: "Runtime API Examples", link: "/api" },
             ],
           },
@@ -209,6 +198,19 @@ export default defineConfig({
         text: "📚 精神食粮",
         items: [
           { text: "亚马逊逆向工作法", link: "/library/9bc140" },
+          { text: "高效能人士的七个习惯", items: [
+            { text: "开篇", link: "/library/d4bf6f" },
+            { text: "习惯一：主动积极（上）", link: "/library/1bbe08" },
+            { text: "习惯一：主动积极（下）", link: "/library/a4c0e3" },
+            { text: "习惯二：以终为始", link: "/library/e9fdc2" },
+            { text: "习惯三：要事第一", link: "/library/867c96" },
+            { text: "从独立到互赖", link: "/library/6009b6" },
+            { text: "习惯四：双赢思维（上）", link: "/library/8fbc81" },
+            { text: "习惯五：知彼解己", link: "/library/9027e5" },
+            { text: "习惯六：统合综效", link: "/library/16c9ea" },
+            { text: "习惯七：不断更新", link: "/library/7c2995" },
+            { text: "尾声：由内而外开启转变之门", link: "/library/b8c16a" },
+          ] },
           { text: "我的最后一本口才书", link: "/library/8f4ba0" },
         ],
       },
