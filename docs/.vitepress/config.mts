@@ -146,9 +146,7 @@ export default defineConfig({
           { text: "唯有爱与生活不可辜负", link: "/tech/7121d4" },
           {
             text: "☕ Java",
-            items: [
-              { text: "LocalDateTime使用", link: "/tech/4df292", },
-            ],
+            items: [{ text: "LocalDateTime使用", link: "/tech/4df292" }],
           },
           {
             text: "🔧 框架与库",
@@ -162,16 +160,14 @@ export default defineConfig({
           {
             text: "🗄️ 数据库",
             items: [
-              { text: "DB数据类型一致性风险治理方案", link: "/tech/c05570", },
-              { text: "xml文件符号表示", link: "/tech/f8b33c", },
-              { text: "SQL常用语句", link: "/tech/d10041", },
+              { text: "DB数据类型一致性风险治理方案", link: "/tech/c05570" },
+              { text: "xml文件符号表示", link: "/tech/f8b33c" },
+              { text: "SQL常用语句", link: "/tech/d10041" },
             ],
           },
           {
             text: "⚡ 效率工具箱",
-            items: [
-              { text: "如何养好一只龙虾🦞", link: "/tech/402261" },
-            ],
+            items: [{ text: "如何养好一只龙虾🦞", link: "/tech/402261" }],
           },
         ],
       },
@@ -184,9 +180,7 @@ export default defineConfig({
       },
       {
         text: "💡 灵感抽屉",
-        items: [
-          { text: "除非你知道更好的办法", link: "/inspiration/c135c6" },
-        ],
+        items: [{ text: "除非你知道更好的办法", link: "/inspiration/c135c6" }],
       },
       {
         text: "🎨 热爱清单",
