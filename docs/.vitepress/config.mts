@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { defineTeekConfig } from "vitepress-theme-teek/config";
+import vitepressEncrypt from "markdown-it-vitepress-encrypt";
 
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
@@ -28,6 +29,15 @@ const teekConfig = defineTeekConfig({
         { folderName: "16.精神食粮", rule: "/library/$uuid6/" },
         { folderName: "19.心语角落", rule: "/heart/$uuid6" },
       ],
+    },
+  },
+  markdown: {
+    config: (md) => {
+      md.use(vitepressEncrypt, [
+        { pageType: "default", password: "952117" },
+        { pageType: "vip", password: "113008" },
+        { pageType: "myself", password: "990610" },
+      ]);
     },
   },
   backTop: {
