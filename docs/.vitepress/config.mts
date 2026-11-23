@@ -93,11 +93,15 @@ const teekConfig = defineTeekConfig({
     bgStyle: "fullImg",
     imgSrc: ["/bg/logo.png", "/bg/png.png"],
     description: [
+      "与光同尘",
       "想要就争取，不行就努力",
+      "长期持续，以正确的方式做正确的事",
       "越能看懂历史，越能明确现在，越能看清未来",
       "是什么，为什么，怎么做，是否有更好的方案，验证结果",
+      "天之道，损有余而补不足；人之道则不然，损不足以奉有余",
       "解决一个问题的答案往往并不在问题的同一维度，而是在更高维度上",
       "我们必不可停止探索，而一切探索的尽头，都是重回起点，并对起点有初次般的了解",
+      "给我力量接受那些我无法改变的事情，给我勇气改变那些我可以改变的事情，给我智慧看清这两者之间的差别",
     ],
     descStyle: "types",
   },
@@ -180,15 +184,24 @@ export default defineConfig({
       },
       {
         text: "💡 灵感抽屉",
-        items: [{ text: "除非你知道更好的办法", link: "/inspiration/c135c6" }],
+        items: [
+          { text: "除非你知道更好的办法", link: "/inspiration/c135c6" },
+          { text: "他没取快递", link: "/inspiration/791549" },
+        ],
       },
       {
         text: "🎨 热爱清单",
-        items: [{ text: "拍照摄影", link: "/hobbies/372bfb" }],
+        items: [
+          { text: "拍照摄影", link: "/hobbies/372bfb" },
+          { text: "穿搭", link: "/hobbies/3k29fb" },
+          { text: "美商提升", link: "/hobbies/ee8a47" },
+        ],
       },
       {
         text: "📚 精神食粮",
         items: [
+          { text: "蛤蟆先生去看心理医生", link: "/library/313ee6" },
+          { text: "非暴力沟通", link: "/library/5122c7" },
           { text: "亚马逊逆向工作法", link: "/library/9bc140" },
           { text: "高效能人士的七个习惯", link: "/library/d4bf6f" },
           { text: "我的最后一本口才书", link: "/library/8f4ba0" },
@@ -197,8 +210,11 @@ export default defineConfig({
       {
         text: "🌿 心语角落",
         items: [
-          { text: "Markdown Examples", link: "/markdown" },
-          { text: "Runtime API Examples", link: "/api" },
+          { text: "两性探索", link: "/heart/474134" },
+          { text: "情商攻略", link: "/heart/8ef6fe" },
+          { text: "情绪词库", link: "/heart/8ef6ff" },
+          { text: "如何运营一段稳定的关系", link: "/heart/d646c0" },
+          { text: "关系与分寸-失败心路", link: "/heart/dda239" },
         ],
       },
     ],
