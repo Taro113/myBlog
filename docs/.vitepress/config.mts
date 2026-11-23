@@ -210,10 +210,10 @@ export default defineConfig({
       {
         text: "📚 精神食粮",
         items: [
+          { text: "高效能人士的七个习惯", link: "/library/d4bf6f" },
           { text: "蛤蟆先生去看心理医生", link: "/library/313ee6" },
           { text: "非暴力沟通", link: "/library/5122c7" },
           { text: "亚马逊逆向工作法", link: "/library/9bc140" },
-          { text: "高效能人士的七个习惯", link: "/library/d4bf6f" },
           { text: "我的最后一本口才书", link: "/library/8f4ba0" },
         ],
       },
