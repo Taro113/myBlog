@@ -29,3 +29,5 @@ git push origin dist
 
 echo 部署完成！
 pause
+
+# npm run docs:dev
