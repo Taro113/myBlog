@@ -38,7 +38,7 @@ if errorlevel 1 (
 )
 
 echo [5/7] 用镜像模式同步产物到根目录（排除 .git）...
-robocopy "%TEMP_DIST%" "." /MIR /XD ".git" "node_modules" /XF ".gitignore" ".gitattributes" /NFL /NDL /NJH /NJS
+robocopy "%TEMP_DIST%" "." /MIR /XD ".git" "node_modules" /XF ".gitignore" ".gitattributes" "start.bat" /NFL /NDL /NJH /NJS
 if %ERRORLEVEL% GEQ 8 goto :error
 
 echo [6/7] 清理临时目录...
