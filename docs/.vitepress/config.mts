@@ -34,9 +34,8 @@ const teekConfig = defineTeekConfig({
   markdown: {
     config: (md) => {
       md.use(vitepressEncrypt, [
-        { pageType: "default", password: "952117" },
-        { pageType: "vip", password: "113008" },
-        { pageType: "myself", password: "990610" },
+        { pageType: "vip", password: "952117" },
+        { pageType: "myself", password: "952117" },
       ]);
     },
   },
@@ -99,7 +98,7 @@ const teekConfig = defineTeekConfig({
   pageStyle: "segment-nav",
   banner: {
     enabled: true,
-    name: "🎉 Self Blog",
+    name: "要勇敢平等的闯死所有人",
     bgStyle: "fullImg",
     imgSrc: ["/bg/logo.png", "/bg/png.png"],
     description: [
@@ -110,6 +109,7 @@ const teekConfig = defineTeekConfig({
       "是什么，为什么，怎么做，是否有更好的方案，验证结果",
       "天之道，损有余而补不足；人之道则不然，损不足以奉有余",
       "解决一个问题的答案往往并不在问题的同一维度，而是在更高维度上",
+      "人生下来最解决不了的问题只有死亡，除此之外的其他一切问题都有解决办法",
       "我们必不可停止探索，而一切探索的尽头，都是重回起点，并对起点有初次般的了解",
       "给我力量接受那些我无法改变的事情，给我勇气改变那些我可以改变的事情，给我智慧看清这两者之间的差别",
     ],
@@ -146,12 +146,8 @@ export default defineConfig({
       {
         text: "🚀 进化志",
         items: [
-          // {
-          //   text: "美团四大名著",
-          //   items: [
-          //     { text: "走进高效能人士的七个习惯", link: "/growth/9703d2" },
-          //   ],
-          // },
+          { text: "项目开发到生活思考", link: "/growth/22d2cb" },
+          { text: "领导力原则", link: "/growth/c3ae51" },
         ],
       },
       {
@@ -210,10 +206,11 @@ export default defineConfig({
       {
         text: "📚 精神食粮",
         items: [
-          { text: "高效能人士的七个习惯", link: "/library/d4bf6f" },
           { text: "蛤蟆先生去看心理医生", link: "/library/313ee6" },
           { text: "非暴力沟通", link: "/library/5122c7" },
           { text: "亚马逊逆向工作法", link: "/library/9bc140" },
+          { text: "高效能人士的七个习惯", link: "/library/d4bf6f" },
+          { text: "要事第一", link: "/library/7fjr4u" },
           { text: "我的最后一本口才书", link: "/library/8f4ba0" },
         ],
       },
